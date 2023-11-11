@@ -1,5 +1,40 @@
-main.remove("main")
-const newHeader = document.createElement("h1");
-newHeader.id = "victory"
-newHeader.innerHTML = "Isaiah is the champion"
-document.body.append(newHeader)
+const element = document.createElement('div')
+
+document.body.append(element)
+
+const ul = document.createElement("ul")
+
+
+for (let i = 0; i<3; i++){
+    const li = document.createElement("li")
+    li.textContent = (i+1).toString()
+    ul.append(li)
+    li.textContent = "Hi, there!"
+
+}
+element.append(ul)
+//////////////////////////////////////
+
+const main = document.getElementById("main")
+main.innerHTML = '<h1>Poodles!</h1><h3>An Essay into the Pom-Pom as Aesthetic Reconfiguration of the Other from a post-Frankfurt School Appropriationist Perspective</h3><p><em>By: Byron Q. Poodle, Esq., BA.</em></p>'
+
+////////////////////////////
+
+const changeProp = document.getElementById("main")
+
+changeProp.style.height = "300px"
+changeProp.style.backgroundColor = "#27647B"
+changeProp.textContent = "You've changed what's on the screen!"
+changeProp.style.fontSize = "24px"
+changeProp.style.marginLeft = "30px"
+changeProp.style.lineHeight = 2
+
+/////////////////////////////////
+
+element.className = "pet-listing dog"
+element.classList.remove("dog")
+element.classList.add("cat", "sale")
+
+/////////////////////
+//Remove list:
+//ul.remove()
